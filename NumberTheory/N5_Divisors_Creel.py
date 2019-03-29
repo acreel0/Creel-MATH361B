@@ -1,7 +1,7 @@
 # proper divisor function
 def prop_div(n):
     prop_list = []
-    for i in range(1,n-1):
+    for i in range(1,n):
         if n%i == 0:
             prop_list.append(i)
     return prop_list
