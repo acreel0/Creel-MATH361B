@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Input variables
-N = 10
+N = 1000
 
 def my_func(x):
     if(x<-2):
@@ -17,7 +17,7 @@ def my_func(x):
         return 3*np.sqrt(x-2) + 4
 
 x = np.linspace(-3,3,N)
-y = [0]*N
+y = [0]*N # or y = np.zeros(N)
 
 for ii in range(len(x)):
     y[ii] = my_func(x[ii])

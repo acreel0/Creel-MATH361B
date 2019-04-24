@@ -61,7 +61,9 @@ def poly_div(f,g):
 
 # test 1:
 f = [7, 6, 0, 3]
+# 3x^3 + 6x + 7
 g = [3, 2]
+# 2x + 3
 q, r = poly_div(f,g)
 print('f:',f)
 print('g:',g)
@@ -71,7 +73,9 @@ print('remainder r:',r)
 
 # test 2:
 ff = [9,2,7,2]
+# 2x^3 + 7x^2 + 2x + 9
 gg = [3,2]
+# 2x + 3
 qq, rr = poly_div(ff,gg)
 print('f:',ff)
 print('g:',gg)

@@ -1,8 +1,8 @@
 # Input Variables
 N = 20
 
-f0 = 0
-f1 = 1
+f0 = 5
+f1 = 8
 
 fib_seq = [0] * N
 cass_identity = []
@@ -26,4 +26,8 @@ for kk in range(1,N-1):
         cass_identity.append(True)
     else:
         cass_identity.append(False)
+    print("cass 1 =", cass1, "and cass 2 =", cass2)
+    diff = abs(cass1 - cass2)
+    print("The difference between cass1 and cass2 is", diff)
     
+print("The results of checking Cassini's identity are", cass_identity)
